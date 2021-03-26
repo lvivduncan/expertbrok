@@ -54,10 +54,20 @@
 }
 
 #lang{
-    width: 250px;
-    padding: 0 10px;
+    width: 1200px;
+    margin: auto;
+    /* padding: 0 10px; */
+}
+
+#lang ul{
     display: flex;
     justify-content: space-between;
+    width: 240px;
+    /* text-align: center; */
+}
+
+#lang li{
+    display: block;
 }
 
 #lang a{
@@ -81,10 +91,6 @@
 
 /* 2 блок */
 #nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
     position: absolute;
     left: 0;
     top: 0;
@@ -92,6 +98,14 @@
     z-index: 2;
     transform: translateY(100px);
     transition: .5s;
+}
+
+#nav-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+    margin: auto;
 }
 
 /* стилі фіксованого навбару внизу */
@@ -169,13 +183,12 @@
 #menu div{
     display: none;
     position: absolute;
-    left: -80px;
-    width: 260px;
+    left: -70px;
+    width: 240px;
     padding-top: 20px;
 }
 
 #menu div ul{
-    /* background: var(--white); */
     background: var(--cyan-dark);
     border-radius: 5px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
@@ -188,7 +201,6 @@
 
 #menu li.parent ul li a{
     text-transform: none;
-    /* color: var(--cyan); */
     color: var(--white);
     display: block;
     padding: 4px 0;
@@ -197,12 +209,12 @@
 }
 
 #menu li.parent ul li a:hover{
-    /* color: var(--red); */
     text-decoration: underline;
 }
 
 
 
+/* search button right */
 #search{
     padding: 10px;
 }
@@ -214,7 +226,7 @@
 }
 
 
-/* номер справа */
+/* phone right */
 #phone{
     text-decoration: none;
     padding: 10px;
@@ -269,6 +281,13 @@
     font-weight: 300;
 }
 
+#header-title h1{
+    text-transform: uppercase;
+    color: var(--white);
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+
 
 
 
@@ -276,6 +295,7 @@
 #nav.fixed {
     background: var(--white);
     z-index: 4;
+    border-bottom: 1px solid var(--gray-light);
 }
 
 #nav.fixed #logo .logo-bg-1{

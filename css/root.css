@@ -13,6 +13,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     --cyan: #1e5c8a;
     --cyan-dark: #273c66;
     --red: #ed1c24;
+    --black: #111;
+    --dark: #505050;
     --gray-light: #f5f5f5;
     --gray: #afafaf;
     --white: #fff;
@@ -22,11 +24,16 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 body{
     font-size: 18px;
     font-family: 'Rubik', sans-serif;
+    color: var(--black);
+    background: url('../images/dot-grid.png');
+    background-attachment: fixed;
 }
 
 h1,h2,h3,h4,h5,h6{
-    text-transform: uppercase;
-    font-weight: 500;
+    font-family: 'Nunito', sans-serif;
+    color: var(--black);
+    margin: 0 0 26px;
+    line-height: 1.2;
 }
 
 h1{
@@ -45,4 +52,35 @@ img{
 ::selection{
     background: var(--red);
     color: var(--white);
+}
+
+strong{
+    font-weight: 700;
+    color: var(--red);
+}
+
+a{
+    color: var(--cyan);
+    text-decoration: underline;
+}
+
+a:hover{
+    color: var(--red);
+    text-decoration: none;
+}
+
+p{
+    line-height: 1.5;
+    margin: 0 0 26px
+}
+
+
+figure{
+    transition: .5s;
+    background: var(--white);
+}
+
+figure:hover{
+    padding: 10px;
+    outline: 1px solid var(--gray-light)
 }

@@ -1,0 +1,20 @@
+
+#main-content{
+    width: 1200px;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 70px;
+}
+
+#main-content h1{
+    text-transform: none;
+    color: var(--cyan);
+    font-weight: 600;
+    margin: 0 0 40px;
+}
+
+#main-content p{
+    line-height: 1.5;
+    margin: 0 0 26px;
+}

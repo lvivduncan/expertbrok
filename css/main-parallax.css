@@ -1,0 +1,17 @@
+
+#main-parallax{
+    /* margin: 100px 0; */
+    padding: 100px 0;
+}
+
+#main-parallax-content{
+    margin: auto;
+    width: 1200px;
+    color: var(--white);
+}
+
+#main-parallax-content h1{
+    color: var(--white);
+    font-weight: 600;
+    margin: 0 0 40px;
+}

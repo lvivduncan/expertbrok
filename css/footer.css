@@ -1,0 +1,10 @@
+
+#footer{
+    padding: 100px 0;
+    background: var(--cyan-dark);
+}
+
+#footer-content{
+    width: 1200px;
+    margin: auto;
+}

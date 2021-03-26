@@ -1,0 +1,33 @@
+
+#main-text{
+    padding: 100px 0;
+    background: url('../images/team.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#main-text-content{
+    width: 1200px;
+    margin: auto;
+}
+
+#main-text h1{
+    color: var(--cyan);
+    text-align: center;
+    font-weight: 600;
+    margin: 0 0 40px;
+}
+
+#main-text-column{
+    columns: 3;
+    column-gap: 50px;
+}
+
+#main-text-column ul,
+#main-text-column ol{
+    margin: 0 0 40px 20px;
+}
+
+#main-text-column li{
+    margin: 20px 0;
+}

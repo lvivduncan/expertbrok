@@ -1,0 +1,43 @@
+
+#main-comments{
+    /* margin: 100px 0; */
+    padding: 100px 0;
+    background: var(--white);
+}
+
+#main-comments-content{
+    width: 1200px;
+    margin: auto;
+}
+
+#main-comments .item{
+    border-radius: 5px;
+    padding: 30px;
+    background: var(--cyan-dark);
+    min-height: 260px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-flow: column;
+}
+
+#main-comments h4{
+    color: var(--white);
+    font-weight: 600;
+    margin: 0 0 15px;
+}
+
+#main-comments time{
+    font-size: 12px;
+    color: var(--white);
+    display: block;
+    margin: 0 0 15px;
+}
+
+#main-comments blockquote{
+    font-size: 14px;
+    font-style: italic;
+    color: var(--gold);
+    margin: 0 0 15px;
+    line-height: 1.5;
+}

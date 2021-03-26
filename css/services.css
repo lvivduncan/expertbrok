@@ -33,4 +33,7 @@
 
 #services h4{
     margin-top: 20px;
+    color: var(--white);
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
 }
