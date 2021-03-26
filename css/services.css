@@ -1,0 +1,36 @@
+
+#services{
+    width: 1200px;
+    margin: -200px auto 0;
+    position: relative;
+    z-index: 2;
+}
+
+#services .item{
+    height: 300px;
+    border-radius: 5px;
+    padding: 30px;
+    background: var(--cyan-dark);
+    color: var(--white);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-decoration: none;
+    transition: .5s;
+}
+
+#services .item:hover{
+    background: var(--cyan);
+}
+
+#services svg{
+    fill: var(--gold);
+    width: 64px;
+    height: 64px;
+}
+
+#services h4{
+    margin-top: 20px;
+}
