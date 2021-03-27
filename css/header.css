@@ -40,30 +40,27 @@
 
 
 /* 1 блок */
-#top{
-    background: var(--cyan-dark);
-    display: flex;
-    align-items: center;    
-    justify-content: space-between;
-    padding: 0 20px;
+#lang{
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 50%;
     z-index: 2;
-}
-
-#lang{
     width: 1200px;
-    margin: auto;
-    /* padding: 0 10px; */
+    margin-left: -600px;
 }
 
 #lang ul{
     display: flex;
     justify-content: space-between;
-    width: 240px;
-    /* text-align: center; */
+    width: 260px;
+    padding: 0 10px;
+    background: var(--cyan-dark);
+    background: var(--white);
+    transition: .5s;
+}
+
+#lang ul:hover{
+    padding: 5px 10px;
 }
 
 #lang li{
@@ -72,10 +69,13 @@
 
 #lang a{
     display: inline-block;
-    padding: 3px 0 3px 5px;
-    font-size: 14px;
-    color: var(--gray);
+    padding: 0 0 2px 5px;
+    font-size: 10px;
+    color: var(--cyan);
     text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
 }
 
 #lang a:hover{
@@ -83,7 +83,7 @@
 }
 
 #lang a.active{
-    opacity: .3;
+    color: var(--gray);
 }
 
 
@@ -108,11 +108,6 @@
     margin: auto;
 }
 
-/* стилі фіксованого навбару внизу */
-#nav.fixed{
-    position: fixed;
-    transform: translateY(0);
-}
 
 #logo{
     width: 260px;
@@ -151,15 +146,13 @@
 
 #menu li{
     display: inline-block;
-    padding: 0 10px;
 }
 
 #menu a{
     display: block;
     text-decoration: none;
     color: var(--white);
-    font-weight: 500;
-    font-size: 18px;
+    padding: 5px;
     letter-spacing: 1px;
     text-transform: uppercase;
     transition: color .5s;
@@ -217,6 +210,8 @@
 /* search button right */
 #search{
     padding: 10px;
+    transition: .5s;
+    outline: none;
 }
 
 #search svg{
@@ -230,6 +225,7 @@
 #phone{
     text-decoration: none;
     padding: 10px;
+    transition: .5s
 }
 
 #phone svg{
@@ -238,8 +234,34 @@
     stroke: var(--white);
 }
 
+#search:hover,
+#phone:hover{
+    background: var(--white);
+}
+
+#search:hover svg,
+#phone:hover svg{
+    stroke: var(--cyan);
+}
 
 
+/* форма пошуку */
+#search-form{
+    /* background: var(--cyan-dark); */
+    background: var(--white);
+}
+
+#search-form input{
+    padding: 10px;
+    /* background:var(--black); */
+    background:var(--gray-light);
+    outline: none;
+    border: none;
+    /* color: var(--white); */
+    color: var(--cyan-dark);
+    letter-spacing: 1px;
+    width: 240px;
+}
 
 
 
@@ -279,6 +301,9 @@
     font-size: 26px;
     margin: 0 0 10px;
     font-weight: 300;
+    background: var(--red);
+    display: inline-block;
+    padding: 0 10px;
 }
 
 #header-title h1{
@@ -292,7 +317,10 @@
 
 
 /* фіксований навбар */
-#nav.fixed {
+#nav.fixed{
+    position: fixed;
+    transform: translateY(0);
+
     background: var(--white);
     z-index: 4;
     border-bottom: 1px solid var(--gray-light);
