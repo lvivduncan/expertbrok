@@ -7,11 +7,33 @@
     grid-gap: 70px;
 }
 
+@media(max-width:540px){
+    #main-content{
+        margin: 50px auto;
+    }
+}
+
+@media(max-width:1240px){
+    #main-content{
+        width: 95%;
+        grid-template-columns: 1fr;
+    }
+    #main-content figure{
+        display: none;
+    }
+}
+
 #main-content h1{
     text-transform: none;
     color: var(--red);
     font-weight: 600;
     margin: 0 0 40px;
+}
+
+@media(max-width:540px){
+    #main-content h1{
+        color: var(--cyan)
+    }
 }
 
 #main-content h3{
@@ -21,6 +43,15 @@
     color: var(--white);
     display: inline-block;
     font-size: 22px
+}
+
+@media(max-width:540px){
+    #main-content h3{
+        color: var(--cyan);
+        background: transparent;
+        padding: 0;
+        display: block;
+    }
 }
 
 #main-content p{

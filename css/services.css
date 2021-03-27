@@ -6,6 +6,18 @@
     z-index: 2;
 }
 
+@media(max-width:1240px){
+    #services{
+        width: 95%;
+    }
+}
+
+@media(max-width:540px){
+    #services{
+        margin-top:-100px
+    }
+}
+
 #services .item{
     height: 300px;
     border-radius: 5px;
@@ -21,6 +33,12 @@
     transition: .5s;
 }
 
+@media(max-width:540px){
+    #services .item{
+        height: 200px;
+    }
+}
+
 #services .item:hover{
     background: var(--cyan);
 }
@@ -31,9 +49,22 @@
     height: 64px;
 }
 
+@media(max-width:540px){
+    #services svg{
+        width: 42px;
+        height: 42px;
+    }
+}
+
 #services h4{
     margin-top: 20px;
     color: var(--white);
     text-transform: uppercase;
     font-family: 'Rubik', sans-serif;
+}
+
+@media(max-width:540px){
+    #services h4{
+        font-size: 22px
+    }
 }

@@ -7,6 +7,12 @@
     justify-content: center;
 }
 
+@media(max-width:540px){
+    #header{
+        height: 60vh;
+    }
+}
+
 /* фонова картинка */
 #header-image{
     width: 100%; 
@@ -49,6 +55,20 @@
     margin-left: -600px;
 }
 
+@media(max-width:1240px){
+    #lang{
+        width: 260px;
+        left: 2.5%;
+        margin-left: auto;
+    }
+}
+
+@media(max-width:540px){
+    #lang{
+        width: 95%;
+    }
+}
+
 #lang ul{
     display: flex;
     justify-content: space-between;
@@ -57,6 +77,12 @@
     background: var(--cyan-dark);
     background: var(--white);
     transition: .5s;
+}
+
+@media(max-width:540px){
+    #lang ul{
+        width: 100%;
+    }
 }
 
 #lang ul:hover{
@@ -88,7 +114,6 @@
 
 
 
-
 /* 2 блок */
 #nav{
     position: absolute;
@@ -108,11 +133,26 @@
     margin: auto;
 }
 
+@media(max-width:1240px){
+    #nav-content{
+        width: 95%
+    }
+}
+
 
 #logo{
     width: 260px;
     padding: 5px 10px;
     transition: .5s;
+}
+
+@media(max-width:776px){
+    #logo{
+        background: var(--white);
+    }
+    #logo .logo-bg-1{
+        fill:var(--cyan)
+    }
 }
 
 .logo-bg-1{
@@ -125,7 +165,7 @@
 
 #logo:hover{
     width: 260px;
-    background: rgba(255,255,255,1);
+    background: var(--white);
     padding: 5px 10px
 }
 
@@ -142,6 +182,12 @@
 #menu{
     display: block;
     margin: auto;
+}
+
+@media(max-width:996px){
+    #menu{
+        display: none;
+    }
 }
 
 #menu li{
@@ -205,6 +251,33 @@
     text-decoration: underline;
 }
 
+/* mobile menu */
+#menu-mobile{
+    display: none;
+    padding: 10px;
+    transition: .5s;
+}
+
+@media(max-width: 996px){
+    #menu-mobile{
+        display: block;
+        margin-left: auto;
+    }
+}
+
+#menu-mobile:hover{
+    background: var(--white);
+}
+
+#menu-mobile svg{
+    width: 24px;
+    height: 24px;
+    stroke: var(--white);
+}
+
+#menu-mobile:hover svg{
+    stroke: var(--cyan);
+}
 
 
 /* search button right */
@@ -247,17 +320,14 @@
 
 /* форма пошуку */
 #search-form{
-    /* background: var(--cyan-dark); */
     background: var(--white);
 }
 
 #search-form input{
     padding: 10px;
-    /* background:var(--black); */
     background:var(--gray-light);
     outline: none;
     border: none;
-    /* color: var(--white); */
     color: var(--cyan-dark);
     letter-spacing: 1px;
     width: 240px;
@@ -294,6 +364,18 @@
     100% { 
         opacity: 1; 
         transform: scale3d(1, 1, 1);
+    }
+}
+
+@media(max-width:776px){
+    #header-title{
+        width: 95%;
+    }
+}
+
+@media(max-width:540px){
+    #header-title{
+        display: none;
     }
 }
 
@@ -339,6 +421,44 @@
 }
 
 #nav.fixed #search svg,
-#nav.fixed #phone svg{
+#nav.fixed #phone svg,
+#nav.fixed #menu-mobile svg{
     stroke: var(--cyan)
+}
+
+
+
+/* мобільне меню */
+.fancybox-content #menu{
+    display: block!important;
+}
+
+.fancybox-content #menu li{
+    display: block!important;
+}
+
+.fancybox-content #menu li.parent > a::after{
+    display: none!important;
+}
+
+.fancybox-content #menu li a{
+    display: block!important;
+    color: var(--cyan-dark);
+    text-transform: none;
+}
+
+.fancybox-content #menu div {
+    display: block;
+    position: static;
+    padding-top: 0;
+}
+
+.fancybox-content #menu div ul{
+    background: transparent!important;
+    box-shadow: none;
+    padding: 0 0 0 20px!important;
+}
+
+.fancybox-content #menu div li a{
+    color: var(--cyan-dark)!important;
 }

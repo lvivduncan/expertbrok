@@ -5,15 +5,40 @@
     color: var(--gray)
 }
 
+@media(max-width:540px){
+    #footer{
+        padding: 50px 0
+    }
+}
+
 .footer-content{
     width: 1200px;
     margin: auto;
+}
+
+@media(max-width:1240px){
+    .footer-content{
+        width: 95%;
+    }
 }
 
 #footer .footer-content{
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     grid-gap: 20px;
+}
+
+@media(max-width:996px){
+    #footer .footer-content{
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 10px;
+    }
+}
+
+@media(max-width:776px){
+    #footer .footer-content{
+        grid-template-columns: 1fr;
+    }
 }
 
 .about svg{
@@ -27,6 +52,12 @@
 #footer h5{
     color: var(--gold);
     font-weight: 600;
+}
+
+@media(max-width:540px){
+    #footer h5{
+        color: var(--gray)
+    }
 }
 
 #footer p{

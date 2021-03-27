@@ -1,13 +1,24 @@
 
 #main-parallax{
-    /* margin: 100px 0; */
     padding: 100px 0;
+}
+
+@media(max-width:540px){
+    #main-parallax{
+        padding: 50px 0
+    }
 }
 
 #main-parallax-content{
     margin: auto;
     width: 1200px;
     color: var(--white);
+}
+
+@media(max-width:1240px){
+    #main-parallax-content{
+        width: 95%;
+    }
 }
 
 #main-parallax-content h1{

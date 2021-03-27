@@ -6,9 +6,21 @@
     background-attachment: fixed;
 }
 
+@media(max-width:540px){
+    #main-text{
+        padding: 50px 0
+    }
+}
+
 #main-text-content{
     width: 1200px;
     margin: auto;
+}
+
+@media(max-width:1240px){
+    #main-text-content{
+        width: 95%;
+    }
 }
 
 #main-text h1{
@@ -21,6 +33,18 @@
 #main-text-column{
     columns: 3;
     column-gap: 50px;
+}
+
+@media(max-width: 996px){
+    #main-text-column{
+        columns: 2;
+    }
+}
+
+@media(max-width: 776px){
+    #main-text-column{
+        columns: 1;
+    }
 }
 
 #main-text-column ul,
